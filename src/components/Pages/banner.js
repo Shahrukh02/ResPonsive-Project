@@ -180,7 +180,8 @@ function Banner() {
           </div>
         </div>
       </div>
-      {/* <div className="main_logo_div">
+      <div className="logo_main_container">
+      <div className="main_logo_div">
       <div className="bannerImg1">
         <img src={BannerOne} className="logo_resize"/>
       </div>
@@ -208,7 +209,8 @@ function Banner() {
       <div className="bannerImg9">
         <img src={BannerNine} className="logo_resize" />
       </div>
-      </div> */}
+      </div>
+      </div>
     </div>
   );
 }

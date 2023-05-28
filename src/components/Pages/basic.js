@@ -11,7 +11,9 @@ function Basic() {
     };
 
     return (
-        <div className='centerFIve'>
+        <div className="main_centerFive_div">
+            <div className='centerFIve'>
+            <div className="left_basic_div">
             <div className='basicContainer'>
                 <div className='detail'>
                     <h2>Try Us Out Risk Free!</h2>
@@ -33,10 +35,14 @@ function Basic() {
                     {showPopup && <PopupForm />}
                 </div>
             </div>
+            </div>
             <div className='basicLogo'>
+                <div className="">
                 <p className='textLogo'>Basic Logo for</p>
                 <h3 className='priceLogo'>$35</h3>
+                </div>
             </div>
+        </div>
         </div>
     );
 }

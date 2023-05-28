@@ -3,7 +3,9 @@
   padding: 0px;
   font-family: sans-serif;
   scroll-behavior: smooth;
+  
 }
+
 
 .container {
   display: flex;
@@ -184,7 +186,7 @@ a {
 }
 
 .heading3::before {
-  /* display: none; */
+  display: none;
   background-image: url(./images/discount-img.webp);
   position: absolute; 
   background-repeat: no-repeat;
@@ -197,6 +199,7 @@ a {
 }
 
 .heading3::after {
+  display: none;
   background-image: url(./images/ban-price.png);
   position: absolute;
   background-repeat: no-repeat;
@@ -317,14 +320,21 @@ a {
   color: #000;
   font-weight: bold;
 }
+.logo_main_container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .main_logo_div {
+  /* border: solid 1px ; */
+  overflow: hidden;
   width: 90%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .logo_resize {
-  width: 20px;
+  width: 230px ;
 }
 .bannerImg1 {
   animation-name: fadeInDownWeb;
@@ -514,7 +524,7 @@ a {
 .centerThree {
   background-color: #000;
   color: #fff;
-  max-width: 100%;
+  width: 100%;
   padding: 15px 0px;
 }
 
@@ -544,11 +554,11 @@ a {
 .feacont {
   display: flex;
   justify-content: space-evenly;
-  margin-left: 10px;
+  /* margin-left: 10px; */
 }
 
 .feaOne {
-  margin-left: 110px;
+  margin-left: 60px;
 }
 
 .centerFour {
@@ -572,6 +582,7 @@ a {
 .mainCardsContainer {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -579,6 +590,7 @@ a {
   background-color: #2d54cd;
   width: 340px;
   height: 400px;
+  margin-bottom: 15px;
   box-shadow: 0 4px 7px 7px rgb(0 0 0 / 10%);
   border-radius: 10px;
 }
@@ -644,16 +656,19 @@ a {
 
 .topPakages {
   background-color: #0c1623;
-  padding: 30px;
-  height: 700px;
+  padding: 30px 0px;
+  padding-left: 20px;
+  height: 700px auto;
   align-items: center;
-  margin: 50px 120px 0px 174px;
+  /* width: 100%; */
+  /* margin: 50px 120px 0px 174px; */
 }
 
 .packageName {
   color: #fff;
   font-size: 46px;
   margin: 100px 0px 0px;
+
 }
 
 .packageDetail {
@@ -714,19 +729,27 @@ a {
 }
 
 .packageImg {
-  margin-right: -73px;
+  /* margin-right: -53px; */
   margin-top: 25px;
 }
-
+.main_centerFive_div{
+  width: 100%;
+  display: flex;
+  justify-content:center;
+}
 .centerFIve {
   background-color: #2d54cd;
   padding: 35px 40px 45px 80px;
   border-radius: 7px;
-  margin: 50px 100px 0px 155px;
+  width: 70%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* margin: 50px 100px 0px 155px; */
 }
 
 .basicContainer {
-  padding: 0px 15px;
+  /* padding: 0px 15px; */
 }
 
 .detail {
@@ -745,25 +768,27 @@ a {
 }
 
 .centerContact {
-  padding: 0px 0px 0px 8px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-
+.left_basic_div{
+  margin-left: -60px;
+  width: 60%;
+}
 .mainContact {
-  position: absolute;
-  display: inline-flex;
-  max-width: 200px;
-  margin-top: 30px;
+  display: flex;
+  align-items: center;
 }
 
 .mainContactTwo {
-  display: inline-flex;
-  max-width: 200px;
-  margin-left: 13%;
+  display: flex;
+  align-items: center;
 }
 
 .centerPhone {
   margin-left: 7px;
-  margin-top: -19px;
   color: #fff;
   font-size: 12px;
 }
@@ -811,7 +836,7 @@ a {
 
 .centerBtun {
   background-color: #f49c20;
-  padding: 8px 20px;
+  padding: 8px 20px ;
   border-radius: 5px;
   text-decoration: none;
   color: #fff;
@@ -824,17 +849,15 @@ a {
 }
 
 .contactbuton {
-  margin: -37.5px 0px 40px 420px;
+  /* margin: -37.5px 0px 40px 420px; */
 }
 
-.basicLogo {
-  margin-left: 60%;
-}
+
 
 .textLogo {
   font-size: 41px;
   color: #fff;
-  margin-top: -35%;
+  /* margin-top: -35%; */
 }
 
 .priceLogo {
@@ -953,6 +976,7 @@ a {
 .clientReviewscont {
   display: flex;
   justify-content: space-evenly;
+  flex-wrap:wrap ;
   margin-right: 15%;
   margin-left: 15%;
 }
@@ -1011,11 +1035,14 @@ a {
 .centerEight {
   background-color: #1a1a1a;
   padding: 35px 0px;
+  display: flex;
+  justify-content: center;
 }
 
 .registerContainer {
-  margin-left: 20%;
-  width: auto;
+  /* margin-left: 20%; */
+  /* border: solid 3px blue; */
+  width: 70%;
 }
 
 .registerText p {
@@ -1027,7 +1054,7 @@ a {
   font-size: 45px;
   color: #ffffff;
   margin: 5px 0px 15px;
-  width: 700px;
+  width: 100%;
 }
 
 .registerText span {
@@ -1078,11 +1105,16 @@ a {
 
 .footer {
   background-color: #000;
-  padding: 70px 0px 160px 100px;
+  padding: 70px 0px 0px 0px;
 }
-
+.main_footer_div{
+  display: flex;
+  justify-content: center;
+}
 .footerContainer {
-  padding: 0% 15.8%;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
 }
 
 .footerLogo img {
@@ -1106,9 +1138,9 @@ a {
 }
 
 .footerContact {
-  margin-top: -150px;
+  /* margin-top: -150px; */
   max-width: 250px;
-  margin-left: 38%;
+  /* margin-left: 38%; */
 }
 
 .contactList {
@@ -1129,8 +1161,8 @@ a {
 }
 
 .footerSolution {
-  margin-left: 70%;
-  margin-top: -141px;
+  /* margin-left: 70%; */
+  /* margin-top: 10px; */
 }
 
 .footerSolution img {
@@ -1217,7 +1249,7 @@ li :hover {
   font-size: 14px;
   margin-top: -8.5%;
   margin-bottom: -8.5%;
-  margin-left: 35%;
+  text-align: center;
 }
 
 /* button animation */
@@ -1392,11 +1424,21 @@ li :hover {
     display: flex;
     justify-content: center;
     width: auto;
+    padding-right: 30px;
   }
-  .nameField, .emailField , .phoneField{
-    margin-bottom: 10px;
+  .nameField, .emailField , .phoneField{ 
+   margin-bottom: 10px;
   }
-  
+  .centerBtun{
+    display: block;
+  }
+  .footerContainer{
+    display: block;
+    width: auto;
+  }
+  .footerContact ,.footerSolution , .footerLogo{
+    margin-top: 18px;
+  }
 }
 
 @media only screen and (max-width: 788px) {
@@ -1431,6 +1473,39 @@ li :hover {
   .logo{
     width: 100%;
   }
+  .topPakages, .centerFIve{
+    width: 96%;
+    margin: 0;
+    height: 700px ;
+    padding-bottom: 80px;
+  }
+  .packageDetail{
+    font-size: 10px;
+  }
+  .centerFIve{
+    display: block;
+  }
+  .left_basic_div, .basicLogo{
+    margin-left: -10px;
+    width: 100%;
+  }
+  .basicLogo{
+    margin-top: 14px;
+    display: flex;
+    justify-content: center;
+  }
+  .buttonOne, .buttonTwo , .buttonThree{
+    font-size: 10px;
+  }
+  .logo_resize {
+    width: 130px ;
+  }
+  
+.packageImg {
+  width: 160px;
+  /* margin-right: -53px; */
+  margin-top: 135px;
+}
 }
 
 @media only screen and (max-width: 482px) {
