@@ -3,11 +3,16 @@
   padding: 0px;
   font-family: sans-serif;
   scroll-behavior: smooth;
-
 }
 
 .container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #000000;
+  height: auto;
+  
 }
 
 .App {
@@ -16,8 +21,10 @@
 }
 
 .logo {
-  margin-left: 19%;
-  padding-top: 23px;
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  /* padding-top: 23px; */
 }
 
 .logo img {
@@ -27,10 +34,15 @@
 a {
   text-decoration: none;
 }
-
+.contact_header_div{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
 .phone {
   padding-left: 15%;
-  padding-top: 38px;
+  padding-top: 30px;
 }
 
 .phoneIcon {
@@ -56,7 +68,7 @@ a {
 }
 
 .phoneNmd {
-  color: #BBB;
+  color: #bbb;
   font-size: 13px;
 }
 
@@ -80,11 +92,10 @@ a {
 .message {
   padding-left: 6%;
   padding-top: 38px;
-
 }
 
 .messageText {
-  color: #BBB;
+  color: #bbb;
   font-weight: bold;
   font-size: 12px;
 }
@@ -118,7 +129,7 @@ a {
 
 .button:hover {
   animation-name: pulse-grow;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -136,9 +147,10 @@ a {
 
 .centerOne {
   background-image: linear-gradient(#2d54cd, #33d7ef, #2d54cd);
-  height: 760px;
-  width: 1903px;
-  margin-top: 10px;
+  height: 760px auto; 
+  width: auto;
+  margin-top: -10px;
+  padding-bottom: 130px ;
 }
 
 .heading1 {
@@ -169,12 +181,12 @@ a {
   color: #fff;
   font-weight: 400;
   margin-top: 10px;
-
 }
 
 .heading3::before {
+  /* display: none; */
   background-image: url(./images/discount-img.webp);
-  position: absolute;
+  position: absolute; 
   background-repeat: no-repeat;
   height: 164px;
   width: 200px;
@@ -192,14 +204,13 @@ a {
   width: 200px;
   content: "";
   left: 73%;
-  top: 26%
+  top: 26%;
 }
 
 .heading4 {
   font-size: 40px !important;
   color: #fff;
   margin-top: 13px;
-
 }
 
 .heading4 span {
@@ -207,18 +218,30 @@ a {
   font-weight: bold;
   font-size: 40px !important;
 }
-
+.main_form_container_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form_div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.forms{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
 .formContainer {
-  margin-top: -55px;
+  margin-top: -45px;
   display: flex;
   justify-content: space-between;
   background-color: #e4f0f0;
-  max-width: 53%;
-  margin-left: 22.8%;
+  width: 73%;
   padding: 17px;
   border-radius: 10px;
 }
-
 
 .nameField {
   padding: 10px 12px 9px 40px;
@@ -280,7 +303,7 @@ a {
 
 .submitBtn:hover {
   animation-name: pulse-grow;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -294,86 +317,94 @@ a {
   color: #000;
   font-weight: bold;
 }
-
+.main_logo_div {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logo_resize {
+  width: 20px;
+}
 .bannerImg1 {
   animation-name: fadeInDownWeb;
-  animation-duration: .8s;
-  animation-delay: .2s;
+  animation-duration: 0.8s;
+  animation-delay: 0.2s;
   animation-fill-mode: both;
-  margin-top: -15px;
-  margin-left: -3%;
+  /* margin-top: -15px;
+  margin-left: -3%; */
 }
 
 .bannerImg2 {
   animation-name: fadeInDownWeb;
-  animation-duration: .8s;
-  animation-delay: .4s;
+  animation-duration: 0.8s;
+  animation-delay: 0.4s;
   animation-fill-mode: both;
-  margin-top: -235px;
-  margin-left: 19%;
+  /* margin-top: -235px;
+  margin-left: 19%; */
 }
 
 .bannerImg3 {
   animation-name: fadeInDownWeb;
-  animation-duration: .8s;
-  animation-delay: .5s;
+  animation-duration: 0.8s;
+  animation-delay: 0.5s;
   animation-fill-mode: both;
-  margin-top: 15px;
-  margin-left: 15.2%;
+  /* margin-top: 15px;
+  margin-left: 15.2%; */
 }
 
 .bannerImg4 {
   animation-name: fadeInDownWeb;
-  animation-duration: .8s;
-  animation-delay: .2s;
+  animation-duration: 0.8s;
+  animation-delay: 0.2s;
   animation-fill-mode: both;
-  margin-top: -188px;
-  margin-left: 27%;
+  /* margin-top: -188px;
+  margin-left: 27%; */
 }
 
 .bannerImg5 {
   animation-name: fadeInDownWeb;
-  animation-duration: .8s;
-  animation-delay: .7s;
+  animation-duration: 0.8s;
+  animation-delay: 0.7s;
   animation-fill-mode: both;
-  margin-top: -275px;
-  margin-left: 41.8%;
+  /* margin-top: -275px;
+  margin-left: 41.8%; */
 }
 
 .bannerImg6 {
   animation-name: fadeInDownWeb;
-  animation-duration: .8s;
-  animation-delay: .2s;
+  animation-duration: 0.8s;
+  animation-delay: 0.2s;
   animation-fill-mode: both;
-  margin-top: -198px;
-  margin-left: 62%;
+  /* margin-top: -198px;
+  margin-left: 62%; */
 }
 
 .bannerImg7 {
   animation-name: fadeInDownWeb;
-  animation-duration: .8s;
-  animation-delay: .6s;
+  animation-duration: 0.8s;
+  animation-delay: 0.6s;
   animation-fill-mode: both;
-  margin-top: -258px;
-  margin-left: 73%;
+  /* margin-top: -258px;
+  margin-left: 73%; */
 }
 
 .bannerImg8 {
   animation-name: fadeInDownWeb;
-  animation-duration: .8s;
-  animation-delay: .5s;
+  animation-duration: 0.8s;
+  animation-delay: 0.5s;
   animation-fill-mode: both;
-  margin-top: 8px;
-  margin-left: 78%;
+  /* margin-top: 8px;
+  margin-left: 78%; */
 }
 
 .bannerImg9 {
   animation-name: fadeInDownWeb;
-  animation-duration: .8s;
-  animation-delay: .4s;
+  animation-duration: 0.8s;
+  animation-delay: 0.4s;
   animation-fill-mode: both;
-  margin-top: -335px;
-  margin-left: 84.3%;
+  /* margin-top: -335px;
+  margin-left: 84.3%; */
 }
 
 /* animation code */
@@ -382,7 +413,6 @@ a {
   100% {
     opacity: 1;
     transform: translate(0);
-
   }
 
   0% {
@@ -396,7 +426,6 @@ a {
 .centerTwo {
   background-color: #fff;
   padding: 80px 0px;
-
 }
 
 .cTwoHeading h2 {
@@ -409,43 +438,46 @@ a {
   margin-top: 10px;
   text-align: center;
   font-size: 18px;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 
 .containerTwo {
   display: flex;
-  justify-content: space-between;
-  width: 1200px;
-  margin-left: 19%;
-  margin-top: 35px;
+  justify-content: space-around;
+  /* width: 100%; */
+  flex-wrap: wrap;
+  margin-top: 10px;
 }
-
+.Imgcontainer {
+  height: 420px ;
+  width: 320px;
+  margin-top: 20px;
+}
 .Imgcontainer img {
   margin: 0px 0px 100px;
   border-radius: 10px;
-  transition: all .2s linear
+  transition: all 0.2s linear;
 }
 
 .Imgcontainer img:hover {
   cursor: pointer;
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
+
 
 .descript {
-  background-color: #ffff;
   border-top-right-radius: 7px;
-  width: 12.5%;
+  width: 15%;
   position: absolute;
-  margin-top: -8%;
-  transition: all .2s linear
+  margin-top: -6%;
+  transition: all 0.2s linear;
 }
-
 
 .descript p {
   margin-top: 5px;
   margin-left: 3px;
   font-size: 16px;
-  color: #A7A7A7;
+  color: #a7a7a7;
 }
 
 .descript p span {
@@ -457,10 +489,9 @@ a {
 .Imgbutn {
   color: #fff;
   font-size: 15px;
-  background-color: #2D54CD;
+  background-color: #2d54cd;
   padding: 12px 5px;
   border-radius: 5px;
-
 }
 
 .Imgbutn:hover {
@@ -469,7 +500,7 @@ a {
 
 .btn:hover {
   animation-name: pulse-grow;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -490,12 +521,14 @@ a {
 .feature h2 {
   font-size: 30px;
   font-weight: 100;
+  margin-bottom: 13px;
 }
 
 .featuresContainer {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .feaOne a {
@@ -543,7 +576,7 @@ a {
 
 .card {
   padding: 40px 30px 35px;
-  background-color: #2D54CD;
+  background-color: #2d54cd;
   width: 340px;
   height: 400px;
   box-shadow: 0 4px 7px 7px rgb(0 0 0 / 10%);
@@ -665,7 +698,6 @@ a {
   font-size: 36px;
   margin-right: 0.9%;
   font-weight: 800;
-
 }
 
 .packageImgbutn {
@@ -687,7 +719,7 @@ a {
 }
 
 .centerFIve {
-  background-color: #2D54CD;
+  background-color: #2d54cd;
   padding: 35px 40px 45px 80px;
   border-radius: 7px;
   margin: 50px 100px 0px 155px;
@@ -721,7 +753,6 @@ a {
   display: inline-flex;
   max-width: 200px;
   margin-top: 30px;
-
 }
 
 .mainContactTwo {
@@ -741,7 +772,6 @@ a {
   font-size: 18px;
   margin-left: 1px;
   color: #fff;
-
 }
 
 .centerPhone a:hover {
@@ -752,7 +782,6 @@ a {
 .centerIconOne {
   margin-left: 8px;
   color: #fff;
-
 }
 
 .centerIconTwo {
@@ -800,7 +829,6 @@ a {
 
 .basicLogo {
   margin-left: 60%;
-
 }
 
 .textLogo {
@@ -810,7 +838,7 @@ a {
 }
 
 .priceLogo {
-  color: #F49c20;
+  color: #f49c20;
   font-size: 152px;
 }
 
@@ -826,12 +854,12 @@ a {
 .portfolioHeading h2 {
   text-align: center;
   font-size: 42px;
-  color: #1B1136;
+  color: #1b1136;
 }
 
 .portfolioHeading p {
   font-size: 18px;
-  color: #AFAFC1;
+  color: #afafc1;
   text-align: center;
   padding: 20px 0px 0px;
 }
@@ -856,12 +884,12 @@ a {
   color: #fff;
   font-size: 15px;
   font-weight: bold;
-  transition: all .2s linear
+  transition: all 0.2s linear;
 }
 
 .portfoliobtn:hover {
   animation-name: pulse-grow;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -877,7 +905,7 @@ a {
 .portfolioChat {
   font-size: 12px;
   margin-top: 5px;
-  color: #BBB;
+  color: #bbb;
 }
 
 .portfolioChat span {
@@ -913,7 +941,7 @@ a {
 
 .clientHeading h2 {
   font-size: 36px;
-  color: #1B1136;
+  color: #1b1136;
 }
 
 .clientHeading p {
@@ -942,7 +970,7 @@ a {
 .reviwescontainer:hover {
   cursor: pointer;
   background-color: #f4f4f4;
-  transition: all .2s linear;
+  transition: all 0.2s linear;
 }
 
 .reviewsBox {
@@ -983,7 +1011,6 @@ a {
 .centerEight {
   background-color: #1a1a1a;
   padding: 35px 0px;
-
 }
 
 .registerContainer {
@@ -1012,8 +1039,6 @@ a {
   margin-top: 25px;
 }
 
-
-
 .buttonOne {
   background-color: #fff;
   font-size: 15px;
@@ -1039,7 +1064,6 @@ a {
   padding: 10px 20px;
   border-radius: 5px;
 }
-
 
 .buttonThree {
   background-color: #fff;
@@ -1102,7 +1126,6 @@ a {
 
 .contactList a:hover {
   cursor: pointer;
-
 }
 
 .footerSolution {
@@ -1116,7 +1139,7 @@ a {
 }
 
 .footerSolution img:hover {
-  transform: scale(1.1)
+  transform: scale(1.1);
 }
 
 .footerSolution h4 {
@@ -1158,7 +1181,6 @@ a {
 
 li a:hover {
   color: #007bff;
-  ;
 }
 
 li :hover {
@@ -1198,17 +1220,15 @@ li :hover {
   margin-left: 35%;
 }
 
-
 /* button animation */
 
 @keyframes pulse-grow {
   to {
-    transform: scale(1.1)
+    transform: scale(1.1);
   }
 }
 
 /* button animation */
-
 
 /* popup css */
 .popup {
@@ -1297,7 +1317,7 @@ li :hover {
 
 .popupButton:hover {
   animation-name: pulse-grow;
-  animation-duration: .3s;
+  animation-duration: 0.3s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate;
@@ -1310,7 +1330,6 @@ li :hover {
 }
 
 /* popup css */
-
 
 /* navigation csss */
 
@@ -1342,3 +1361,95 @@ li :hover {
 } */
 
 /* navigation csss */
+
+/* media querry*/
+@media only screen and (max-width: 1200px) {
+  .descript {
+    border-top-right-radius: 7px;
+    width: 19.5%;
+    position: absolute;
+    margin-top: -10%;
+    transition: all 0.2s linear;
+    overflow: hidden;
+    font-size: 5px;
+  }
+  .Imgcontainer{
+    height: 430px;
+  }
+  .descript p{
+    font-size: 14px;
+  }
+  .forms {
+    /* margin-top: -45px; */
+    display: block;
+    /* justify-content: space-between; */
+    /* background-color: #e4f0f0; */
+    /* width: 73%; */
+    /* padding: 17px; */
+    /* border-radius: 10px; */
+  }
+  .formContainer{
+    display: flex;
+    justify-content: center;
+    width: auto;
+  }
+  .nameField, .emailField , .phoneField{
+    margin-bottom: 10px;
+  }
+  
+}
+
+@media only screen and (max-width: 788px) {
+  .descript {
+    border-top-right-radius: 7px;
+    width: 27.5%;
+    position: absolute;
+    margin-top: -10%;
+    transition: all 0.2s linear;
+    overflow: hidden;
+    font-size: 5px;
+  }
+  .Imgcontainer{
+    height: 430px;
+  }
+  .descript p{
+    font-size: 14px;
+  }
+  .descript{
+    margin-top: -70px;
+  }
+  .nmb, .live_chat , .messageText{
+    font-size: 11px;
+  }
+  .button{
+    padding: 10px 15px;
+  }
+  .container{
+    display: block;
+    margin-bottom: 10px;
+  }
+  .logo{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 482px) {
+  .descript {
+    border-top-right-radius: 7px;
+    width: 34.5%;
+    position: absolute;
+    margin-top: -10%;
+    transition: all 0.2s linear;
+    overflow: hidden;
+    font-size: 5px;
+  }
+  .Imgcontainer{
+    height: 430px;
+  }
+  .descript p{
+    font-size: 14px;
+  }
+  .descript{
+    margin-top: -70px;
+  }
+}
